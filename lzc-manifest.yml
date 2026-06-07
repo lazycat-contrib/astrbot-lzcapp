@@ -1,0 +1,17 @@
+application:
+  subdomain: astrbot
+  background_task: true
+  upstreams:
+    - location: /
+      backend: http://astrbot:6185/
+  public_path:
+    - /
+
+services:
+  astrbot:
+    # soulter/astrbot:v4.25.5
+    image: registry.lazycat.cloud/czyt/soulter/astrbot:62decc8b0dc63885
+    environment:
+      - TZ=Asia/Shanghai
+    binds:
+      - /lzcapp/var/data:/AstrBot/data

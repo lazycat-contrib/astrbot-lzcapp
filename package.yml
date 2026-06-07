@@ -1,0 +1,19 @@
+package: cloud.lazycat.app.astrbot
+version: 4.25.5
+name: AstrBot
+description: "一个支持大语言模型（LLM）接入功能的聊天机器人及开发框架"
+min_os_version: 1.5.0
+homepage: https://github.com/Soulter/AstrBot
+author: Soulter
+
+permissions:
+  required:
+    - net.internet
+
+locales:
+  zh:
+    name: "AstrBot"
+    description: "一个支持大语言模型（LLM）接入功能的聊天机器人及开发框架"
+  en:
+    name: "AstrBot"
+    description: "A chatbot and development framework with LLM integration"
