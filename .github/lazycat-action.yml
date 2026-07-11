@@ -1,0 +1,39 @@
+version: 1
+
+project:
+  root: .
+  build_config: lzc-build.yml
+  package_file: package.yml
+  output: dist/astrbot.lpk
+
+update:
+  strategy: publish
+  version_source:
+    type: image
+    image: astrbot
+
+build:
+  run_buildscript: false
+
+images:
+  - id: astrbot
+    target: service
+    service: astrbot
+    source: docker.io/soulter/astrbot
+    channel: stable
+    tag_regex: '^v?\d+\.\d+\.\d+$'
+    version_regex: '^v?(?P<version>\d+\.\d+\.\d+)$'
+    delivery:
+      mode: lazycat
+
+stores:
+  official:
+    enabled: true
+    skip_if_version_exists: true
+    create_if_missing: false
+    changelog_locales: [zh, en]
+  private:
+    enabled: true
+    skip_if_version_exists: true
+    name: AstrBot
+    summary: Published from GitHub Actions
