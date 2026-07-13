@@ -3,7 +3,7 @@ version: 4.26.5
 name: AstrBot
 description: "一个支持大语言模型（LLM）接入功能的聊天机器人及开发框架"
 min_os_version: 1.5.0
-homepage: https://github.com/Soulter/AstrBot
+homepage: https://github.com/AstrBotDevs/AstrBot
 author: Soulter
 permissions:
   required:
