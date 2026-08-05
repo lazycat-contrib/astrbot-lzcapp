@@ -1,5 +1,5 @@
 package: cloud.lazycat.app.astrbot
-version: 4.27.1
+version: 4.27.2
 name: AstrBot
 description: "一个支持大语言模型（LLM）接入功能的聊天机器人及开发框架"
 min_os_version: 1.5.0
