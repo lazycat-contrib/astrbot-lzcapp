@@ -9,8 +9,8 @@ application:
 services:
   astrbot:
     # soulter/astrbot:v4.25.5
-    # upstream: docker.io/soulter/astrbot:v4.29.1
-    image: registry.lazycat.cloud/czyt/soulter/astrbot:e09c7e11736d2fd0
+    # upstream: docker.io/soulter/astrbot:v4.29.3
+    image: registry.lazycat.cloud/czyt/soulter/astrbot:b31318cff51eea3a
     environment:
       - TZ=Asia/Shanghai
     binds:
